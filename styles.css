@@ -1,0 +1,559 @@
+:root {
+    --black: #282b2b;
+    --light: #404242;
+    --dark: #070808;
+    --blue: #ffbf10;
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile,
+.list {
+    width: 280px;
+    height: 580px;
+    box-shadow: -3px -3px 8px var(--light), 2px 2px 8px var(--dark);
+    border-radius: 50px;
+    padding: 24px;
+}
+
+.list {
+    position: absolute;
+    z-index: 20;
+    background-color: var(--black);
+    display: none;
+    transition: all 1s ease;
+}
+
+.block {
+    display: block;
+    transition: all 1s ease;
+}
+
+.back,
+.menu {
+    width: 40px;
+    height: 40px;
+    box-shadow: -3px -3px 8px var(--light), 2px 2px 8px var(--dark);
+    border-radius: 50%;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background-color: var(--black);
+}
+
+.back:focus,
+.menu:focus {
+    outline: none;
+}
+
+.back:hover,
+.menu:hover {
+    box-shadow: -4px -4px 12px var(--light), 4px 4px 12px var(--dark);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-symbol {
+    position: absolute;
+    border: solid var(--blue);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 2px;
+    height: 2px;
+    top: 38%;
+    left: 38%;
+    background-color: transparent;
+    transform: rotate(130deg);
+}
+
+.line {
+    left: 30%;
+    top: 32%;
+    width: 16px;
+    height: 2px;
+    background-color: var(--blue);
+    position: absolute;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+}
+
+.line1 {
+    left: 30%;
+    top: 47%;
+    width: 16px;
+    height: 2px;
+    background-color: var(--blue);
+    position: absolute;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+}
+
+.line2 {
+    left: 30%;
+    top: 62%;
+    width: 16px;
+    height: 2px;
+    background-color: var(--blue);
+    position: absolute;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+}
+
+.song {
+    width: 170px;
+    height: 170px;
+    box-shadow: -9px -9px 8px var(--light) inset, 7px 7px 8px var(--dark) inset;
+    border-radius: 50%;
+    margin: 40px auto 0 auto;
+    position: relative;
+}
+
+.display {
+    width: 138px;
+    height: 138px;
+    box-shadow: -8px -8px 9px var(--dark) inset, 13px 13px 6px var(--light) inset,
+        -3px 3px 8px var(--light), 2px 2px 8px var(--dark);
+    border-radius: 50%;
+    margin: 40px auto 0 auto;
+    position: absolute;
+    top: -22px;
+    left: 17px;
+}
+
+.circle {
+    width: 139px;
+    height: 139px;
+    border: 3px solid var(--blue);
+    box-shadow: -1px -1px 5px #6bffff, 1px 1px 5px #6bffff;
+    border-radius: 50%;
+    margin: 40px auto 0 auto;
+    position: absolute;
+    top: -25px;
+    left: 14px;
+}
+
+.st-line {
+    width: 3px;
+    height: 13px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 58px;
+    left: 40px;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+    animation: line 1s infinite;
+}
+
+@keyframes line {
+    to {
+        top: 53px;
+        height: 20px;
+    }
+}
+
+@keyframes line2 {
+    to {
+        top: 46px;
+        height: 35px;
+    }
+}
+
+@keyframes line1 {
+    to {
+        top: 52px;
+        height: 20px;
+    }
+}
+
+@keyframes line3 {
+    to {
+        top: 52px;
+        height: 20px;
+    }
+}
+
+@keyframes line4 {
+    to {
+        top: 47px;
+        height: 37px;
+    }
+}
+
+@keyframes line5 {
+    to {
+        top: 56px;
+        height: 14px;
+    }
+}
+
+.st-line2 {
+    width: 3px;
+    height: 19px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 54px;
+    left: 60px;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+    animation: line2 1s infinite;
+}
+
+.st-line1 {
+    width: 3px;
+    height: 30px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 48px;
+    left: 50px;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+    animation: line1 1s infinite;
+}
+
+.st-line3 {
+    width: 3px;
+    height: 35px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 47px;
+    left: 70px;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+    animation: line3 1s infinite;
+}
+
+.st-line4 {
+    width: 3px;
+    height: 26px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 51px;
+    left: 80px;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+    animation: line4 1s infinite;
+}
+
+.st-line5 {
+    width: 3px;
+    height: 11px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 58px;
+    left: 90px;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+    animation: line5 1s infinite;
+}
+
+.shadow {
+    width: 4px;
+    height: 4px;
+    box-shadow: -4px -4px 10px #ffbf10, 5px 5px 10px #ffbf10;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.song-name {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    color: var(--blue);
+    font-family: Sans-serif;
+    text-shadow: 1px 1px 9px #ffbf10;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.album-name {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #7d7d7d;
+    font-family: Sans-serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding-top: 1px;
+}
+
+.slider {
+    width: 100%;
+    height: 18px;
+    box-shadow: -2px -2px 3px var(--light) inset, 2px 2px 5px var(--dark) inset;
+    border-radius: 50px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.slider-circle {
+    width: 32px;
+    height: 32px;
+    box-shadow: -4px -3px 4px var(--light), 4px 3px 4px var(--dark);
+    border-radius: 50%;
+    background-color: var(--black);
+    position: absolute;
+    top: -8px;
+    z-index: 10;
+}
+
+.circleAnimate {
+    animation: move 5s infinite;
+}
+
+@keyframes move {
+    from {
+        left: 1%;
+    }
+
+    to {
+        left: 90%;
+    }
+}
+
+.blue-circle {
+    width: 14px;
+    height: 14px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+}
+
+.slider-left {
+    width: 41%;
+    height: 4px;
+    background-color: var(--blue);
+    border-radius: 50px 0px 0px 50px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 8px #ffbf10;
+}
+
+.animateBlue {
+    animation: blue 5s infinite;
+}
+
+@keyframes blue {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 89%;
+    }
+}
+
+.previous,
+.play,
+.next {
+    width: 70px;
+    height: 70px;
+    box-shadow: -3px -3px 8px var(--light), 2px 2px 8px var(--dark);
+    border-radius: 50%;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background-color: var(--black);
+}
+
+.previous:hover,
+.play:hover,
+.next:hover {
+    box-shadow: -5px -5px 12px var(--light), 5px 5px 12px var(--dark);
+}
+
+.previous:focus,
+.play:focus,
+.next:focus {
+    outline: none;
+}
+
+.margin {
+    margin-top: 75px;
+    position: relative;
+}
+
+.triangle,
+.triangle1,
+.triangle2,
+.triangle3,
+.triangle4 {
+    width: 1px;
+    height: 1px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 9px solid var(--blue);
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    transform: rotate(-90deg);
+}
+
+.triangle1 {
+    top: 40%;
+    left: 44%;
+}
+
+.triangle3 {
+    transform: rotate(90deg);
+    left: 34%;
+}
+
+.triangle4 {
+    transform: rotate(90deg);
+    left: 49%;
+}
+
+.triangle2 {
+    opacity: 0;
+    z-index: 10;
+    transform: rotate(90deg);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 14px solid var(--light);
+    left: 40%;
+    top: 37%;
+}
+
+.shadow1 {
+    width: 4px;
+    height: 4px;
+    box-shadow: -6px -6px 12px #ffbf10, 6px 6px 12px #ffbf10;
+    position: absolute;
+    left: 33px;
+    top: 33px;
+}
+
+.clicked {
+    background-color: var(--blue);
+    box-shadow: -7px -7px 8px #ffbf10 inset, 7px 7px 8px #ffbf1083 inset,
+        -3px -3px 8px var(--light), 2px 2px 8px #ffbf1091 !important;
+}
+
+.pause-line,
+.pause-line2 {
+    width: 5px;
+    height: 21px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 34%;
+    left: 39%;
+    box-shadow: -1px -1px 8px #ffbf10, 1px 1px 13px var(--light);
+}
+
+.pause-line2 {
+    left: 56%;
+}
+
+.pause {
+    opacity: 1;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+li {
+    list-style: none;
+    padding: 10px 0px;
+    font-size: 19px;
+    margin: 15px 10px;
+    color: #8a8787;
+    color: var(--blue);
+    font-family: Sans-serif;
+    text-shadow: 1px 0px 8px #ffbf10;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+li:hover {
+    text-shadow: none;
+}
+
+ul {
+    padding-left: 0;
+    overflow: scroll;
+    margin-top: 0;
+}
+
+.small {
+    height: 34px;
+    width: 34px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.small-line {
+    height: 12px;
+    width: 2px;
+}
+
+li div:nth-of-type(2) {
+    font-size: 12px;
+    color: #7d7d7d;
+    padding-top: 4px;
+    text-shadow: none;
+}
+
+li p {
+    font-size: 10px;
+    font-family: Sans-serif;
+    color: #7d7d7d;
+    text-shadow: none;
+}
+
+.repeat {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#time {
+    position: absolute;
+    top: -30px;
+    right: 2px;
+    font-family: Sans-serif;
+    font-size: 10px;
+    color: #7d7d7d;
+    letter-spacing: 1px;
+    text-shadow: none;
+}
+
+.repeat:focus,
+.shuffle:focus {
+    outline: none;
+}
+
+.shadow2 {
+    width: 2px;
+    height: 2px;
+    box-shadow: -4px -4px 10px #ffbf10, 5px 5px 10px #ffbf10;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+.animateRepeat {
+    animation: repeat 1s infinite;
+}
+
+@keyframes repeat {
+    100% {
+        transform: rotate(180deg)
+    }
+}
+

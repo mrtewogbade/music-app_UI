@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="mobile">
+            <div class="flex">
+                <button class="back" onClick="openList()">
+                    <div class="back-symbol">
+                    </div>
+                    <div class="shadow"></div>
+                </button>
+                <button class="menu" onClick="openList()">
+                    <div class="line"></div>
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </button>
+            </div>
+            <div class="song">
+                <div class="circle"></div>
+                <div class="display">
+                    <div class="symbol">
+                        <span class="st-line" id="l"></span>
+                        <span class="st-line1" id="l1"></span>
+                        <span class="st-line2" id="l2"></span>
+    
+                        <span class="st-line3" id="l3"></span>
+                        <span class="st-line4" id="l4"></span>
+                        <span class="st-line5" id="l5"></span>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="song-name" id="song-name">Drag me down</div>
+            <div class="album-name" id="album-name">One direction</div>
+            <div class="slider">
+    
+                <button class="repeat" onClick="repeatSVG()"> <svg id="repeatSvg" xmlns="http://www.w3.org/2000/svg"
+                        width="18" height="18" fill="#7d7d7d" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                        <path
+                            d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                        <path fill-rule="evenodd"
+                            d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                    </svg>
+                    <div class="shadow2"></div>
+                </button>
+                <div id="time">
+                    01:20
+                </div>
+                <div class="slider-circle circleAnimate" id="slider-circle">
+                    <div class="blue-circle">
+                    </div>
+                </div>
+                <div id="slider-left" class="slider-left animateBlue"></div>
+            </div>
+    
+            <div class="flex margin">
+    
+                <button class="previous" onClick="previousSong()">
+                    <div class="triangle"></div>
+                    <div class="triangle1"></div>
+                    <div class="shadow1"></div>
+                </button>
+                <button class="play" id="play" onclick="clickedPlay()">
+                    <div class="triangle2" id="triangle"></div>
+                    <div class="pause" id="pause">
+                        <div class="pause-line"></div>
+                        <div class="pause-line2"></div>
+                    </div>
+                    <div class="shadow1"></div>
+                </button>
+    
+                <button class="next" onClick="nextSong()">
+                    <div class="triangle3"></div>
+                    <div class="triangle4"></div>
+                    <div class="shadow1"></div>
+                </button>
+            </div>
+        </div>
+        <div class="list" id="list">
+            <div>
+                <button class="back" onClick="goBack()">
+                    <div class="back-symbol">
+                    </div>
+                    <div class="shadow"></div>
+                </button>
+                <ul>
+                    <li onClick="songClick(event)" id="li1">
+                        <div class="flex">
+                            <div>
+                                <div id="song1"></div>
+                                <div id="album1"></div>
+                            </div>
+                            <p id="time1"></p>
+                        </div>
+                    </li>
+    
+                    <li onClick="songClick(event)" id="li2">
+                        <div class="flex">
+                            <div>
+                                <div id="song2"></div>
+                                <div id="album2"></div>
+                            </div>
+                            <p id="time2"></p>
+                        </div>
+                    </li>
+                    <li onClick="songClick(event)" id="li3">
+                        <div class="flex">
+                            <div>
+                                <div id="song3"></div>
+                                <div id="album3"></div>
+                            </div>
+                            <p id="time3"></p>
+                        </div>
+                    </li>
+                    <li onClick="songClick(event)" id="li4">
+                        <div class="flex">
+                            <div>
+                                <div id="song4"></div>
+                                <div id="album4"></div>
+                            </div>
+                            <p id="time4"></p>
+                        </div>
+                    </li>
+                    <li onClick="songClick(event)" id="li5">
+                        <div class="flex">
+                            <div>
+                                <div id="song5"></div>
+                                <div id="album5"></div>
+                            </div>
+                            <p id="time5"></p>
+                        </div>
+                    </li>
+                    <li onClick="songClick(event)" id="li6">
+                        <div class="flex">
+                            <div>
+                                <div id="song6"></div>
+                                <div id="album6"></div>
+                            </div>
+                            <p id="time6"></p>
+                        </div>
+                    </li>
+                    <li onClick="songClick(event)" id="li7">
+                        <div class="flex">
+                            <div>
+                                <div id="song7"></div>
+                                <div id="album7"></div>
+                            </div>
+                            <p id="time7"></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+</body>
+</html>
